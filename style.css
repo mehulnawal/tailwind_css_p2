@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    color: white;
+    background-color: black;
+}
+
+.header-toggle,
+.swiper-toggle,
+.connect-toggle {
+    color: black;
+    background-color: white;
+}
+
+.body-toggle {
+    color: #111;
+    background-color: white;
+}
+
+.popup {
+    visibility: hidden;
+}
+
+.test {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    color: text-white;
+}
+
+.swiper-slide {
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: grab;
+    border-radius: 10px;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    margin-bottom: 10px;
+}
+
+.swiper-pagination-bullet {
+    background-color: red;
+    width: 10px;
+    height: 10px;
+}
+
+.footer-toggle {
+    color: black;
+    background-color: white;
+}
+
+.dynamic-txt {
+    line-height: 30px;
+    height: 30px;
+    overflow: hidden;
+}
+
+.dynamic-txt li {
+    list-style: none;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+}
+
+@keyframes slide {
+    100% {
+        top: -120px;
+    }
+}
+
+.dynamic-txt li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    /* border: 2px solid white; */
+    height: 100%;
+    width: 100%;
+    animation: typing 1.5s linear infinite;
+}
+
+@keyframes typing {
+
+    0% {
+        left: 0;
+    }
+
+    40% {
+        left: 50%;
+    }
+
+    60% {
+        left: 100%;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
